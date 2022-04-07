@@ -48,22 +48,22 @@ pm_about_admin_text: |
   Lets set a welcome message to welcome new users coming to your group.
   Send `/setwelcome [message]` to set a welcome message!
 pm_about_notes_text: |
-  *[♥](https://telegra.ph/file/69f8b04576dc1eb9b3079.jpg) Setting up notes ♥*
+  *♥ Setting up notes ♥*
 
   ♡ You can save message/media/audio or anything as notes to get a note simply use # at the beginning of a word
   ♡ You can also set buttons for notes and filters (refer help menu)
 pm_about_support_text: |
-  *[♥](https://telegra.ph/file/69f8b04576dc1eb9b3079.jpg)  Shikimori Micchon Robot support chats ♥*
+  *♥  Shikimori Micchon Robot support chats ♥*
 
   Join My Support Group/Channel for see or report a problem on [Mai Support](https://t.me/shikimoriXsupport).
 pm_about_credit_text: |
-  *[♥](https://telegra.ph/file/69f8b04576dc1eb9b3079.jpg) Credis for Mai Sakurajima ♥*
+  *♥ Credis for Mai Sakurajima ♥*
 
   Here Developers Making And Give Inspiration For Made The Mai Sakurajima Robot
 pm_help_text: |
-  *[♥](https://telegra.ph/file/69f8b04576dc1eb9b3079.jpg) Click on the button bellow to get description about specifics command. ♥*
+  *♥ Click on the button bellow to get description about specifics command. ♥*
 pm_help_module_text: |
-  *[♥](https://telegra.ph/file/69f8b04576dc1eb9b3079.jpg) Click on the button bellow to get description about specifics command. ♥*
+  *♥ Click on the button bellow to get description about specifics command. ♥*
   If You Face Any Problems Please Report It To Our [Support Group.](https://t.me/shikimoriXsupport) 
   
 # Group Help Text
