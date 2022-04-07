@@ -9,11 +9,11 @@ from SiestaRobot.events import register
 from SiestaRobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/bd9ce6e2c66833236248d.mp4"
+PHOTO = "https://telegra.ph/file/5e79b9b1bc356a4ac2f25.mp4"
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**Yo!! [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Micchon Shikimori.** \n\n"
+  TEXT = f"**Yo!! [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Mai Sakurajima.** \n\n"
   TEXT += "♡ **I'm Working Properly Baka!!** \n\n"
   TEXT += f"♡ **My Darling : [Light Yagami♡ (夜神月♡)](https://t.me/itz_light_yagami)** \n\n"
   TEXT += f"♡ **Library Version :** `{telever}` \n\n"
