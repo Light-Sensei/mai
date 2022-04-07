@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/shikimoriXrobot?startgroup=new"),
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/maisanXrobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -414,7 +414,7 @@ def siesta_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "chat_grp_button"), url="t.me/night_raiderss"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/shikimoriXrobot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/maisanxrobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -457,7 +457,7 @@ def siesta_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="https://t.me/ShikimoriXsupport"),
-                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/ShikimoriXupdates"),
+                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/maisanXupdates"),
                     ],
                     [
                         InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
@@ -475,10 +475,6 @@ def siesta_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(text="Light", url="https://github.com/Light-Sensei"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="Itachi", url="https://github.com/Yoriichi-Tsugikuni"),
-                        InlineKeyboardButton(text="Kazutora", url="https://github.com/Nchuuya"),
                     ],
                     [
                         InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
@@ -525,7 +521,7 @@ def Source_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "chat_grp_button"), url="t.me/night_raiderss"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/shikimoriXrobot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/maisanxrobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -813,7 +809,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**[Am alive now](https://telegra.ph/file/3cb52477faa325818e71d.jpg)**""",
+                f"""**[Hoi am alive now](https://telegra.ph/file/2517d810ea112d5b4c42f.jpg)**""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
