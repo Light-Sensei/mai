@@ -24,7 +24,9 @@ group_start_text: |
   *ᴀᴄᴛɪᴠᴇ sɪɴᴄᴇ :* `{}`
 
 pm_about_text: |
-  ♥ Hey Darling I'm [Mai Sakurajima](https://telegra.ph/file/69f8b04576dc1eb9b3079.jpg), a powerful group management bot built to help you manage your group easily. ♥ 
+  IMG = https://telegra.ph/file/69f8b04576dc1eb9b3079.jpg
+  
+  ♥ Hey Darling I'm Mai Sakurajima, a powerful group management bot built to help you manage your group easily. ♥ 
 
   ♡ I can restrict users.
   ♡ I can greet users with customizable welcome messages and even set a group's rules.
