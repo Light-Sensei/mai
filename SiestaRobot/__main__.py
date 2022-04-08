@@ -206,7 +206,6 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),                        
-                reply_img="https://telegra.ph/file/2517d810ea112d5b4c42f.jpg",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
