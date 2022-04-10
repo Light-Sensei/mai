@@ -301,25 +301,25 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is 'Darling'."
+        text += "\n\nThe Disaster level of this person is 'Hubby'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Onii-Chan'."
+        text += "\n\nThis user is member of 'Ota-San'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Sensei'."
+        text += "\n\nThe Disaster level of this person is 'Kyōdai'."
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\nThe Disaster level of this person is 'Senpai'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Best Friend'."
+        text += "\n\nThe Disaster level of this person is 'Shin'yū'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Friend'."
+        text += "\n\nThe Disaster level of this person is 'Tomodachi'."
         disaster_level_present = True
     elif user.id == 1492076351:
-         text += "\n\nOwner Of The Bot. Queen Of [Light Yagami♡ (夜神月♡)](http://t.me/Itz_Light_Yagami). Bot Name Inspired From 'Shikimori is not just a cutie'."
+         text += "\n\nOwner Of The Bot. Queen Of [Light Yagami♡ (夜神月♡)](http://t.me/Itz_Light_Yagami). Bot Name Inspired From 'Bunny Girl Senpai'."
          disaster_level_present = True
 
     try:
@@ -355,9 +355,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/ShikimoriXupdates/11"),
+                                "Health", url="https://t.me/maisanXupdates/6"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/ShikimoriXupdates/9")
+                                "Disaster", url="https://t.me/maisanXupdates/4")
                         ],
                     ]
                 ),
@@ -373,9 +373,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/ShikimoriXupdates/11"),
+                                "Health", url="https://t.me/maisanXupdates/6"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/ShikimoriXupdates/9")
+                                "Disaster", url="https://t.me/maisanXupdates/4")
                         ],
                     ]
                 ),
@@ -470,7 +470,7 @@ def stats(update, context):
             status
             + "\n*Shikimori Statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/ShikimoriXsupport) | [✦ Updates](https://t.me/ShikimoriXupdates)\n\n"
+            + f"\n\n[✦ Support](https://t.me/ShikimoriXsupport) | [✦ Updates](https://t.me/maisanXupdates)\n\n"
             + "╘══「 by [Light Yagami (夜神月)](https://t.me/Itz_Light_yagami) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -483,7 +483,7 @@ def stats(update, context):
                         "\n*Shikimori Statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/ShikimoriXsupport) | ✦ [Updates](https://t.me/ShikimoriXupdates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/ShikimoriXsupport) | ✦ [Updates](https://t.me/maisanXupdates)\n\n"
                 )
                 + "╘══「 by [Light Yagami (夜神月)](https://t.me/Itz_Light_yagami) 」\n"
             ),
