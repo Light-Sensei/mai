@@ -560,7 +560,7 @@ SUPPORTLIST_HANDLER = CommandHandler(
     "Senpai", supportlist, run_async=True
 )
 SUDOLIST_HANDLER = CommandHandler("Kyodai", sudolist, run_async=True)
-DEVLIST_HANDLER = CommandHandler("Ota-San", devlist, run_async=True)
+DEVLIST_HANDLER = CommandHandler("Otasan", devlist, run_async=True)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
