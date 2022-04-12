@@ -72,16 +72,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This Person is already My Kyōdai")
+        message.reply_text("This Person is already My Kyodai")
         return ""
 
     if user_id in DEMONS:
-        rt += "uff Now My Senpai become Kyōdai."
+        rt += "uff Now My Senpai become Kyodai."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Really! why you making My Tomodachi to Kyōdai."
+        rt += "Really! why you making My Tomodachi to Kyodai."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -93,7 +93,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt
-        + "\nSuccessfully Made {} My Kyōdai!".format(
+        + "\nSuccessfully Made {} My Kyodai!".format(
             user_member.first_name,
         ),
     )
@@ -133,7 +133,7 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Hehe , Sensei become Senpai"
+        rt += "Hehe , kyodai become Senpai"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -188,7 +188,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Lmao,Kyōdai powers taken."
+        rt += "Lmao,Kyodai powers taken."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -243,22 +243,22 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt +=  "Lmao,Kyōdai powers taken."
+        rt +=  "Lmao,kyodai powers taken."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "Bad Senpai make him best frnd."
+        rt += "Bad Senpai make him Shinyu."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "transform frnd into Shin'yū."
+        rt += "transform frnd into Shinyu."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already my Shin'yū.")
+        message.reply_text("This user is already my Shinyu.")
         return ""
 
     data["tigers"].append(user_id)
@@ -268,7 +268,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\nSuccessfully made this user {user_member.first_name} My Shin'yū!",
+        rt + f"\nSuccessfully made this user {user_member.first_name} My Shinyu !",
     )
 
     log_message = (
@@ -302,7 +302,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("ONichan tell me to stay away from strangers")
+        message.reply_text("Ota-San tell me to stay away from strangers")
         DRAGONS.remove(user_id)
         data["sudos"].remove(user_id)
 
@@ -319,7 +319,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
             log_message = "<b>{}:</b>\n".format(html.escape(chat.title)) + log_message
 
         return log_message
-    message.reply_text("This user is not a Emperor!")
+    message.reply_text("This user is not a disaster user!")
     return ""
 
 
@@ -342,7 +342,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Ota-San teold me to stay away from strangers")
+        message.reply_text("ONichan tell me to stay away from strangers")
         DEMONS.remove(user_id)
         data["supports"].remove(user_id)
 
@@ -382,7 +382,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in WOLVES:
-        message.reply_text("Ota-San tell me to stay away from strangers")
+        message.reply_text("ONichan tell me to stay away from strangers")
         WOLVES.remove(user_id)
         data["whitelists"].remove(user_id)
 
@@ -536,31 +536,31 @@ def devlist(update: Update, context: CallbackContext):
     m.edit_text(reply, parse_mode=ParseMode.HTML)
 
 
-SUDO_HANDLER = CommandHandler(("addsudo", "addbrother"), addsudo, run_async=True)
+SUDO_HANDLER = CommandHandler(("addsudo", "addsense"), addsudo, run_async=True)
 SUPPORT_HANDLER = CommandHandler(("addsupport", "addsenpai"), addsupport, run_async=True)
-TIGER_HANDLER = CommandHandler(("addtomodachi"), addtiger, run_async=True)
+TIGER_HANDLER = CommandHandler(("addbfrnd"), addtiger, run_async=True)
 WHITELIST_HANDLER = CommandHandler(
-    ("addwhitelist", "addtomodachi"), addwhitelist, run_async=True
+    ("addwhitelist", "addfrnd"), addwhitelist, run_async=True
 )
 UNSUDO_HANDLER = CommandHandler(
-    "removebrother", removesudo, run_async=True
+    "removesensei", removesudo, run_async=True
 )
 UNSUPPORT_HANDLER = CommandHandler(
    "removesenpai", removesupport, run_async=True
 )
-UNTIGER_HANDLER = CommandHandler("removebtomodachi", removetiger, run_async=True)
+UNTIGER_HANDLER = CommandHandler("removebfrnds", removetiger, run_async=True)
 UNWHITELIST_HANDLER = CommandHandler(
-    "removetomodachi", removewhitelist, run_async=True
+    "removefrnds", removewhitelist, run_async=True
 )
 WHITELISTLIST_HANDLER = CommandHandler(
-    "Tomodachi", whitelistlist, run_async=True
+    "frnds", whitelistlist, run_async=True
 )
 TIGERLIST_HANDLER = CommandHandler("Bfrnds", tigerlist, run_async=True)
 SUPPORTLIST_HANDLER = CommandHandler(
     "Senpai", supportlist, run_async=True
 )
-SUDOLIST_HANDLER = CommandHandler("Kyodai", sudolist, run_async=True)
-DEVLIST_HANDLER = CommandHandler("Otasan", devlist, run_async=True)
+SUDOLIST_HANDLER = CommandHandler("sensei", sudolist, run_async=True)
+DEVLIST_HANDLER = CommandHandler("Onichan", devlist, run_async=True)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
